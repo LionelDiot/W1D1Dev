@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mes exos JS</title>
+</head>
+
+<body>
+  <script src="script_01.js"></script>
+  <script> prompt("Press any key to continue to Exercise 2 (ctrl+shift+i to show console)");console.clear()</script>
+  <script src="script_02.js"></script>
+  <script> prompt("Press any key to continue to Exercise 3 (ctrl+shift+i to show console)"); console.clear()</script>
+  <script src="script_03.js"></script>
+  <script>
+    prompt("Press any key for a surprise (will clear console)");
+    console.clear();
+    
+    const surpriseMsg = document.createElement("div");
+    surpriseMsg.textContent = "SURPRISE!";
+    
+    surpriseMsg.style.animation = "surprise 4s ease-out forwards";
+    
+    document.body.appendChild(surpriseMsg);
+  </script>
+  <style>
+    @keyframes surprise {
+      0% {
+        opacity: 0;
+        font-size: 0;
+        text-align: center;
+      }
+      100% {
+        opacity: 1;
+        font-size: 5em;
+        text-align: center;
+      }
+    }
+  </style>
+</body>
+</html>
