@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jeu du Loto</title>
+  </head>
+  <body>
+    <h1>Jeu du Loto</h1>
+    <form>
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom" ><br>
+
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" ><br>
+
+      <label for="email">Adresse email:</label>
+      <input type="text" id="email" name="email" ><br>
+
+      <label for="chiffres">6 numéros du Loto:</label>
+      <input type="text" id="chiffres" name="chiffres" pattern="\d{1}(,\d{1}){5}" ><br>
+
+      <button type="submit">Valider</button>
+    </form>
+    <script src="script_loto.js"></script>
+  </body>
+</html>
